@@ -34,10 +34,7 @@
     border: 2px solid red;
 }
 
-body {
-    height: 77777px;
-}
-
+/*! ======= START HEADER SECTION ======= */
 #header {
     width: 100%;
     height: 100vh;
@@ -54,6 +51,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+.logo {
+    width: 150px;
+}
 .contact {
     color: #fff;
     font-size: 24px;
@@ -64,12 +64,61 @@ body {
     color: #fff;
     font-weight: bold;
     margin-top: 25px;
+    max-width: 350px;
 }
 .header__img {
     position: relative;
     overflow: hidden;
     z-index: 2;
 }
+
+.header__img img {
+    width: 650px;
+}
+
+/*! START HEADER [MEDIA] SECTION **************  */
+
+@media screen and (max-width: 1199px) {
+    .logo {
+        width: 120px;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .header__title {
+        font-size: 42px;
+        max-width: 300px;
+    }
+    .btn {
+        padding: 15px 30px;
+    }
+    .header__img img {
+        width: 500px;
+    } 
+}
+@media screen and (max-width: 991px) {
+    #header {
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+    .contact {
+        font-size: 15px;
+    }
+    .header__title {
+        font-size: 35px;
+        max-width: 270px;
+    }
+    .btn {
+        padding: 12px 24px;
+    }
+}
+/*! END HEADER [MEDIA] SECTION **************  */
+
+/*! ======= END HEADER SECTION ======= */
 
 /*! ======= START HELP SECTION ======= */
 .help {
@@ -109,5 +158,34 @@ body {
     font-size: 14px;
     color: #333;
 }
+
+/*! START HELP [MEDIA] SECTION **************  */
+
+@media screen and (max-width: 1199px) {
+    .help__overlay {
+        top: -250px;
+    }
+    .help__overlay img {
+        height: 780px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .help {
+        background: #F8DE1C;
+    }
+    .help__overlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .help__title {
+        font-size: 25px;
+    }
+}
+
+/*! END HELP [MEDIA] SECTION **************  */
+
 
 /*! ======= END HELP SECTION ======= */
