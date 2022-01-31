@@ -111,3 +111,51 @@ body {
 }
 
 /*! ======= END HELP SECTION ======= */
+
+/* START TAXI INFORMATION Stayle */
+
+.taxi__information {
+    background-color: #fff;
+    width: 100%;
+    margin: 250px 0 100px 0;
+}
+
+.taxi__information-box {
+    box-sizing: border-box;
+    margin: 20px 20px;
+    background-color: #fff;
+    box-shadow: 0px 3px 8px rgb(94, 104, 121, 0.288);
+    border-radius: 7px;
+    transition: 0.3s;
+    padding: 10px 0 20px 0;
+}
+
+.taxi__information-box:hover {
+    transform: scale(1.2);
+}
+
+.information__img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.information__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(24, 24, 24, 1);
+    margin: 20px 0;
+}
+
+.information__text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.information__text span {
+    font-size: 18px;
+    color: rgba(249, 178, 51, 1);
+
+}
+
+/* END TAXI INFORMATION Stayle */
