@@ -120,6 +120,7 @@
 
 /*! ======= END HEADER SECTION ======= */
 
+
 /*! ======= START HELP SECTION ======= */
 .help {
     width: 100%;
@@ -159,7 +160,6 @@
     color: #333;
 }
 
-<<<<<<< HEAD
 /*! START HELP [MEDIA] SECTION **************  */
 
 @media screen and (max-width: 1199px) {
@@ -190,20 +190,23 @@
 
 
 /*! ======= END HELP SECTION ======= */
-=======
-/*! ======= END HELP SECTION ======= */
 
-/* START TAXI INFORMATION Stayle */
+/* START TAXI INFORMATION Style */
 
 .taxi__information {
     background-color: #fff;
     width: 100%;
-    margin: 250px 0 100px 0;
+    margin: 200px 0 100px 0;
+}
+
+.taxi__information-title {
+    font-size: 36px;
+    color: #181818;
 }
 
 .taxi__information-box {
     box-sizing: border-box;
-    margin: 20px 20px;
+    margin: 70px 20px;
     background-color: #fff;
     box-shadow: 0px 3px 8px rgb(94, 104, 121, 0.288);
     border-radius: 7px;
@@ -239,5 +242,71 @@
 
 }
 
-/* END TAXI INFORMATION Stayle */
->>>>>>> feac98abbf6f89c65eea911c31c874b7b74cfdb4
+@media screen and (max-width: 400px) {
+    .taxi__information-title {
+        font-size: 25px;
+    }
+}
+/* END TAXI INFORMATION Style */
+
+/* ===== START TAXI DISCOUNT Style =====*/
+
+
+
+/* ===== END TAXI DISCOUNT Style =====*/
+
+/* ======= START TAXI SERVICES  =======*/
+
+.services {
+    width: 100%;
+    background: url('../img/services/services-bg.png') no-repeat center / cover;
+    margin: 0;
+}
+
+.services__bg {
+    background: url('../img/services/services-opacity.png') no-repeat center / cover;
+    width: 100%;
+    height: 100%;
+    padding: 150px 0 100px 0;
+}
+
+.services-title {
+    font-size: 36px;
+    color: #fff;
+}
+
+.services__box {
+    width: 100%;
+    height: 100%;
+    padding: 15px 5px;
+    transition: all 1000ms ease;
+    cursor: pointer;
+}
+
+.services__box:hover {
+    border-radius: 1rem;
+    border: 1px solid #fff;
+}
+
+.services__box-text {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+    .services__box-text {
+        font-size: 18px;
+    }
+    .services-title {
+        font-size: 25px;
+    }
+}
+/* ======= END TAXI SERVICES  =======*/
+
+footer {
+    background: #181818;
+    margin: 0;
+}
+
+
