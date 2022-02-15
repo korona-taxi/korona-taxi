@@ -4,6 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+h1, h2, h3, h4, h5 , h6, p, ul, button {
+    margin-bottom: 0;
+}
 .btn {
     padding: 20px 40px;
     background: #F8DE1C;
@@ -66,15 +69,6 @@
     margin-top: 25px;
     max-width: 350px;
 }
-.header__img {
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.header__img img {
-    width: 650px;
-}
 
 /*! START HEADER [MEDIA] SECTION **************  */
 
@@ -92,9 +86,6 @@
     .btn {
         padding: 15px 30px;
     }
-    .header__img img {
-        width: 500px;
-    } 
 }
 @media screen and (max-width: 991px) {
     #header {
@@ -120,7 +111,6 @@
 
 /*! ======= END HEADER SECTION ======= */
 
-
 /*! ======= START HELP SECTION ======= */
 .help {
     width: 100%;
@@ -128,6 +118,17 @@
     background: rgb(255, 255, 255);
     z-index: 1;
 }
+
+.help_overlay_image {
+    position: absolute;
+    top: -140%;
+    right: 0;
+}
+
+.help_overlay_image img {
+    height: 600px;
+}
+
 .help__overlay {
     position: absolute;
     top: -255px;
@@ -163,6 +164,12 @@
 /*! START HELP [MEDIA] SECTION **************  */
 
 @media screen and (max-width: 1199px) {
+    .help_overlay_image {
+        top: -120%;
+    }
+    .help_overlay_image img {
+        height: 530px;
+    }
     .help__overlay {
         top: -250px;
     }
@@ -175,9 +182,11 @@
     .help {
         background: #F8DE1C;
     }
+    .help_overlay_image,
     .help__overlay {
         display: none;
     }
+    
 }
 
 @media screen and (max-width: 400px) {
@@ -196,17 +205,12 @@
 .taxi__information {
     background-color: #fff;
     width: 100%;
-    margin: 200px 0 100px 0;
-}
-
-.taxi__information-title {
-    font-size: 36px;
-    color: #181818;
+    margin: 250px 0 0 0;
 }
 
 .taxi__information-box {
     box-sizing: border-box;
-    margin: 70px 20px;
+    margin: 20px 20px;
     background-color: #fff;
     box-shadow: 0px 3px 8px rgb(94, 104, 121, 0.288);
     border-radius: 7px;
@@ -239,21 +243,150 @@
 .information__text span {
     font-size: 18px;
     color: rgba(249, 178, 51, 1);
+    
+}
 
+
+/* END TAXI INFORMATION Style */
+
+
+/*! Started bonus (Section) */
+
+.bonus {
+    position: relative;
+    margin: 50px 0;
+    padding: 100px 0;
+}
+
+.bonus-overlay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: -150px;
+    left: 0;
+    position: absolute; 
+}
+
+.bonus-overlay img {
+    width: 100%;
+    height: 800px;
+}
+
+
+.bonus-image-container {
+    position: relative;
+}
+
+.bonus-lenta {
+    position: absolute;
+    left: 35%;
+    top: -25px;
+    transform: scale(0.7);
+}
+
+.bonus-aksiya {
+    width: 120px;
+    position: absolute;
+    top: -50px;
+    right: 70px;
+    transform: scale(0.7);
+}
+
+.bonus-keshbek {
+    font-size: 36px;
+}
+
+.bonus-keshbek span,
+.bonus-car-name {
+    color: rgb(255, 0, 0);
+}
+
+.bonus-komfort {
+    font-size: 14px;
+    color: rgb(66, 61, 61);
+    margin: 7px 0;
+}
+
+.bonus-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 180px;
+    padding: 7px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+    color: #fff;
+    margin: 25px 0;
+}
+
+.bonus-car-text {
+    color: rgb(41, 38, 38);
+    font-size: 30px;
+}
+
+.bonus .btn {
+    margin: 25px 0;
+    background-color: rgb(245, 58, 58);
+    color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .bonus-aksiya {
+        position: absolute;
+        top: -50px;
+        right: 30px;
+        transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .bonus {
+        padding: 30px 0;
+        background: #F8DE1C;
+    }
+    .bonus-overlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bonus-lenta {
+       display: none;
+    }
+    .bonus-aksiya {
+        position: absolute;
+        top: -70px;
+        right: 25px;
+        transform: scale(0.5);
+    }
 }
 
 @media screen and (max-width: 400px) {
-    .taxi__information-title {
-        font-size: 25px;
+    .bonus-keshbek {
+        font-size: 30px;
+    }
+    .bonus-aksiya {
+        top: -70px;
+        right: 20px;
+        transform: scale(0.5);
     }
 }
-/* END TAXI INFORMATION Style */
+@media screen and (max-width: 320px) {
+    .bonus-aksiya {
+        top: -75px;
+        right: 10px;
+        transform: scale(0.4);
+    }
+}
+/*! Ended bonus (Section) */
 
-/* ===== START TAXI DISCOUNT Style =====*/
+.b {
+    border: 2px dashed blue;
+}
 
 
-
-/* ===== END TAXI DISCOUNT Style =====*/
 
 /* ======= START TAXI SERVICES  =======*/
 
