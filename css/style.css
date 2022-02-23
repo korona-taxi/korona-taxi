@@ -1,112 +1,119 @@
 /* Default style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-h1, h2, h3, h4, h5 , h6, p, ul, button {
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+  margin-bottom: 0;
 }
 .btn {
-    padding: 20px 40px;
-    background: #F8DE1C;
-    border: 2px solid transparent;
-    border-radius: 7px;
-    color: #181818;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 100px 0;
-    transition: all .3s linear;
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    letter-spacing: 1px;
-    z-index: 5;
+  padding: 20px 40px;
+  background: #f8de1c;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 100px 0;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+  z-index: 5;
 }
 
 .btn:hover {
-    background: #f3dc2b;
+  background: #f3dc2b;
 }
 
 .btn:active {
-    transform: scale(0.8);
+  transform: scale(0.8);
 }
 
-
 .b {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 /*! ======= START HEADER SECTION ======= */
 #header {
-    width: 100%;
-    height: 100vh;
-    background: url('../img/header/bg1.png') no-repeat center / cover;
-    min-height: 375px;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/header/bg1.png") no-repeat center / cover;
+  min-height: 375px;
 }
 .header__bg {
-    background: url('../img/header/bg.png') no-repeat center / cover;
-    width: 100%;
-    height: 100%;
+  background: url("../img/header/bg.png") no-repeat center / cover;
+  width: 100%;
+  height: 100%;
 }
 .logo__contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-    width: 150px;
+  width: 150px;
 }
 .contact {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
 }
 .header__title {
-    font-size: 48px;
-    color: #fff;
-    font-weight: bold;
-    margin-top: 25px;
-    max-width: 350px;
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 25px;
+  max-width: 350px;
 }
 
 /*! START HEADER [MEDIA] SECTION **************  */
 
 @media screen and (max-width: 1199px) {
-    .logo {
-        width: 120px;
-    }
-    .contact {
-        font-size: 20px;
-    }
-    .header__title {
-        font-size: 42px;
-        max-width: 300px;
-    }
-    .btn {
-        padding: 15px 30px;
-    }
+  .logo {
+    width: 120px;
+  }
+  .contact {
+    font-size: 20px;
+  }
+  .header__title {
+    font-size: 42px;
+    max-width: 300px;
+  }
+  .btn {
+    padding: 15px 30px;
+  }
 }
 @media screen and (max-width: 991px) {
-    #header {
-        height: auto;
-    }
+  #header {
+    height: auto;
+  }
 }
 @media screen and (max-width: 768px) {
-    .logo {
-        width: 100px;
-    }
-    .contact {
-        font-size: 15px;
-    }
-    .header__title {
-        font-size: 35px;
-        max-width: 270px;
-    }
-    .btn {
-        padding: 12px 24px;
-    }
+  .logo {
+    width: 100px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+  .header__title {
+    font-size: 35px;
+    max-width: 270px;
+  }
+  .btn {
+    padding: 12px 24px;
+  }
 }
 /*! END HEADER [MEDIA] SECTION **************  */
 
@@ -114,352 +121,376 @@ h1, h2, h3, h4, h5 , h6, p, ul, button {
 
 /*! ======= START HELP SECTION ======= */
 .help {
-    width: 100%;
-    position: relative;
-    background: rgb(255, 255, 255);
-    z-index: 1;
+  width: 100%;
+  position: relative;
+  background: rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .help_overlay_image {
-    position: absolute;
-    top: -140%;
-    right: 0;
+  position: absolute;
+  top: -140%;
+  right: 0;
 }
 
 .help_overlay_image img {
-    height: 600px;
+  height: 600px;
 }
 
 .help__overlay {
-    position: absolute;
-    top: -255px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: absolute;
+  top: -255px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .help__box {
-    padding: 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 .help__overlay img {
-    width: 100%;
-    height: 800px;
+  width: 100%;
+  height: 800px;
 }
 .help__title {
-    font-size: 36px;
-    color: #181818;
-    font-weight: 500;
+  font-size: 36px;
+  color: #181818;
+  font-weight: 500;
 }
+
 .help__box-img {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
+  width: 75px;
 }
+
+.help__box i {
+  color: #fff;
+  font-size: 5rem;
+}
+
 .help__box-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    padding-bottom: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  padding-bottom: 12px;
 }
 .help__box-text {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
 /*! START HELP [MEDIA] SECTION **************  */
 
 @media screen and (max-width: 1199px) {
-    .help_overlay_image {
-        top: -120%;
-    }
-    .help_overlay_image img {
-        height: 530px;
-    }
-    .help__overlay {
-        top: -250px;
-    }
-    .help__overlay img {
-        height: 780px;
-    }
+  .help_overlay_image {
+    top: -120%;
+  }
+  .help_overlay_image img {
+    height: 530px;
+  }
+  .help__overlay {
+    top: -250px;
+  }
+  .help__overlay img {
+    height: 780px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .help {
-        background: #F8DE1C;
-        padding-bottom: 55px;
-    }
-    .help_overlay_image,
-    .help__overlay {
-        display: none;
-    }
-    .taxi__information {
-        margin: 55px 0 0 0 !important;
-    }
-    
+  .help {
+    background: #f8de1c;
+    padding-bottom: 55px;
+  }
+  .help_overlay_image,
+  .help__overlay {
+    display: none;
+  }
+  .taxi__information {
+    margin: 0 0 0 0 !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .help__title {
-        font-size: 25px;
-    }
+  .help__title {
+    font-size: 25px;
+  }
+
+  .help__box-title {
+    font-size: 20px;
+  }
 }
 
 /*! END HELP [MEDIA] SECTION **************  */
-
 
 /*! ======= END HELP SECTION ======= */
 
 /* START TAXI INFORMATION Style */
 
 .taxi__information {
-    background-color: #fff;
-    width: 100%;
-    margin: 250px 0 0 0;
+  background-color: #fff;
+  width: 100%;
+  margin: 250px 0 0 0;
 }
 
 .taxi__information-box {
-    box-sizing: border-box;
-    margin: 20px 20px;
-    background-color: #fff;
-    box-shadow: 0px 3px 8px rgb(94, 104, 121, 0.288);
-    border-radius: 7px;
-    transition: 0.3s;
-    padding: 10px 0 20px 0;
+  box-sizing: border-box;
+  margin: 20px 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 8px rgb(94, 104, 121, 0.288);
+  border-radius: 7px;
+  transition: 0.3s;
+  padding: 10px 0 20px 0;
 }
 
 .taxi__information-box:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .information__img {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .information__title {
-    font-size: 24px;
-    font-weight: 600;
-    color: rgba(24, 24, 24, 1);
-    margin: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(24, 24, 24, 1);
+  margin: 20px 0;
 }
 
 .information__text {
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .information__text span {
-    font-size: 18px;
-    color: rgba(249, 178, 51, 1);
-    
+  font-size: 18px;
+  color: rgba(249, 178, 51, 1);
 }
 
+.img-thumbnail {
+    border: none;
+}
+
+@media screen and (max-width: 400px) {
+  .taxi__information-title {
+    font-size: 25px;
+  }
+
+  .information__title {
+    font-size: 20px;
+  }
+}
 
 /* END TAXI INFORMATION Style */
-
 
 /*! Started bonus (Section) */
 
 .bonus {
-    position: relative;
-    margin: 50px 0 0 0;
-    padding: 100px 0;
+  position: relative;
+  margin: 50px 0 0 0;
+  padding: 100px 0;
 }
 
 .bonus-overlay {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    top: -150px;
-    left: 0;
-    position: absolute; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: -150px;
+  left: 0;
+  position: absolute;
 }
 
 .bonus-overlay img {
-    width: 100%;
-    height: 800px;
+  width: 100%;
+  height: 800px;
 }
 
-
 .bonus-image-container {
-    position: relative;
+  position: relative;
 }
 
 .bonus-lenta {
-    position: absolute;
-    left: 35%;
-    top: -25px;
-    transform: scale(0.7);
+  position: absolute;
+  left: 35%;
+  top: -25px;
+  transform: scale(0.7);
 }
 
 .bonus-aksiya {
-    width: 120px;
-    position: absolute;
-    top: -50px;
-    right: 70px;
-    transform: scale(0.7);
+  width: 120px;
+  position: absolute;
+  top: -50px;
+  right: 70px;
+  transform: scale(0.7);
 }
 
 .bonus-keshbek {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .bonus-keshbek span,
 .bonus-car-name {
-    color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 .bonus-komfort {
-    font-size: 14px;
-    color: rgb(66, 61, 61);
-    margin: 7px 0;
+  font-size: 14px;
+  color: rgb(66, 61, 61);
+  margin: 7px 0;
 }
 
 .bonus-end {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
-    width: 180px;
-    padding: 7px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 50px;
-    color: #fff;
-    margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 180px;
+  padding: 7px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50px;
+  color: #fff;
+  margin: 25px 0;
 }
 
 .bonus-car-text {
-    color: rgb(41, 38, 38);
-    font-size: 30px;
+  color: rgb(41, 38, 38);
+  font-size: 30px;
 }
 
 .bonus .btn {
-    margin: 25px 0;
-    background-color: rgb(245, 58, 58);
-    color: #fff;
+  margin: 25px 0;
+  background-color: rgb(245, 58, 58);
+  color: #fff;
 }
 
 @media screen and (max-width: 1199px) {
-    .bonus-aksiya {
-        position: absolute;
-        top: -50px;
-        right: 30px;
-        transform: scale(0.5);
-    }
+  .bonus-aksiya {
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    transform: scale(0.5);
+  }
+
+  .bonus {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .bonus {
-        padding: 30px 0;
-        background: #F8DE1C;
-    }
-    .bonus-overlay {
-        display: none;
-    }
+  .bonus {
+    padding: 30px 0;
+    background: #f8de1c;
+  }
+  .bonus-overlay {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    .bonus-lenta {
-       display: none;
-    }
-    .bonus-aksiya {
-        position: absolute;
-        top: -70px;
-        right: 25px;
-        transform: scale(0.5);
-    }
+  .bonus-lenta {
+    display: none;
+  }
+  .bonus-aksiya {
+    position: absolute;
+    top: -70px;
+    right: 25px;
+    transform: scale(0.5);
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .bonus-keshbek {
-        font-size: 30px;
-    }
-    .bonus-aksiya {
-        top: -70px;
-        right: 20px;
-        transform: scale(0.5);
-    }
+  .bonus-keshbek {
+    font-size: 30px;
+  }
+  .bonus-aksiya {
+    top: -70px;
+    right: 20px;
+    transform: scale(0.4);
+  }
 }
 @media screen and (max-width: 320px) {
-    .bonus-aksiya {
-        top: -75px;
-        right: 10px;
-        transform: scale(0.4);
-    }
+  .bonus-aksiya {
+    top: -90px;
+    right: 25px;
+    transform: scale(0.3);
+  }
 }
 /*! Ended bonus (Section) */
-
 
 /* ======= START TAXI SERVICES  =======*/
 
 .services {
-    width: 100%;
-    height: auto;
-    background: url('../img/services/services-bg.png') no-repeat center / cover;
-    margin: 0;
-    margin-top: -240px;
-    z-index: -1;
+  width: 100%;
+  height: auto;
+  background: url("../img/services/services-bg.png") no-repeat center / cover;
+  margin: 0;
+  margin-top: -240px;
+  z-index: -1;
 }
 
 .services__bg {
-    background: url('../img/services/services-opacity.png') no-repeat center / cover;
-    width: 100%;
-    height: 100%;
-    padding: 250px 0 100px 0;
+  background: url("../img/services/services-opacity.png") no-repeat center /
+    cover;
+  width: 100%;
+  height: 100%;
+  padding: 250px 0 100px 0;
 }
 
 .services-title {
-    font-size: 36px;
-    color: #fff;
+  font-size: 36px;
+  color: #fff;
 }
 
 .services__box {
-    width: 100%;
-    height: 100%;
-    padding: 15px 5px;
-    transition: all 1000ms ease;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px;
+  transition: all 1000ms ease;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .services__box:hover {
-    border-radius: 1rem;
-    border: 1px solid #fff;
+  border-radius: 1rem;
+  border: 1px solid #fff;
 }
 
 .services__box-text {
-    font-size: 24px;
-    color: #fff;
-    margin-top: 2rem;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 2rem;
 }
 
 /* ======= Start Services Media ======= */
 
 @media screen and (max-width: 991px) {
-    .services__bg {
-        padding: 300px 0 100px 0;
-    }
+  .services__bg {
+    padding: 300px 0 100px 0;
+  }
 }
 
-
 @media screen and (max-width: 768px) {
-    .services-title {
-        font-size: 25px;
-    }
+  .services-title {
+    font-size: 25px;
+  }
 
-    .services__box-text {
-        font-size: 18px;
-    }
+  .services__box-text {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .services__box-text {
-        font-size: 18px;
-    }
-    .services-title {
-        font-size: 25px;
-    }
+  .services__box-text {
+    font-size: 18px;
+  }
+  .services-title {
+    font-size: 25px;
+  }
 }
 
 /* ======= END TAXI SERVICES  ========*/
@@ -467,104 +498,107 @@ h1, h2, h3, h4, h5 , h6, p, ul, button {
 /* ======= Start Footer Style ======= */
 
 footer {
-    background: #181818;
-    margin: 0;
-    height: auto;
-    margin-top: -2px;
-    z-index: -1;
+  background: #181818;
+  margin: 0;
+  height: auto;
+  margin-top: -2px;
+  z-index: -1;
 }
 
 .footer__container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer .footer__box h3 {
-    color: #fff;
-    font-size: 28px;
+  color: #fff;
+  font-size: 28px;
 }
 
 footer .footer__box h3::after {
-    content: '';
-    display: inline-block;
-    margin: 1rem 0;
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    opacity: 0.3;
-
+  content: "";
+  display: inline-block;
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  opacity: 0.3;
 }
 
 footer .footer__box ul {
-    list-style: none;
+  list-style: none;
 }
 
 footer .footer__box ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    display: inline-block;
-    margin: 5px 0;
-    transition: all 500ms ease;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  margin: 5px 0;
+  transition: all 500ms ease;
 }
 
 footer .footer__box ul li a:hover {
-    color: #f3dc2b;
+  color: #f3dc2b;
 }
 
 footer .footer__box ul li i {
-    margin-right: 15px;
-    color: #fff;
+  margin-right: 15px;
+  color: #fff;
 }
 
 .copyright {
-    margin: 0;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
+  margin: 0;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
 }
 
 /* ======= Start Footer Media ======= */
 
 @media screen and (max-width: 768px) {
-    .footer__container img {
+  .footer__container img {
     width: 130px;
-    }
-    .footer__box {
-        width: 300px;
-    }
+  }
+  .footer__box {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .footer__container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .footer__box {
-        position: relative;
-    }
+  .footer__box {
+    position: relative;
+  }
 
-    .footer__box img {
-        position: absolute;
-        left: -20px;
-    }
+  .footer__box img {
+    position: absolute;
+    left: -20px;
+  }
 
-    footer .footer__box h3 {
-        margin-top: 6rem !important;
-        font-size: 25px;
-    }
+  footer .footer__box h3 {
+    margin-top: 6rem !important;
+    font-size: 25px;
+  }
 
-    footer .footer__box ul li a {
-        font-size: 14px;
-    }
+  footer .footer__box ul li a {
+    font-size: 14px;
+  }
 
-    .copyright {
-        font-size: 12px;
-    }
+  .copyright {
+    font-size: 12px;
+  }
 }
 
+@media screen and (max-width: 350px) {
+  .footer__box {
+    width: 90%;
+  }
+}
 /* ======= End Footer Style ======== */
-
